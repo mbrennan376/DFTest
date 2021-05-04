@@ -1,0 +1,34 @@
+{
+	"name": "dest2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AVFXDB1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "DestId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TestText",
+				"type": "varchar"
+			},
+			{
+				"name": "TestDate",
+				"type": "varchar"
+			},
+			{
+				"name": "Calculated",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DestTable2"
+		}
+	}
+}
